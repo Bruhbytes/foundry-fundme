@@ -41,6 +41,8 @@ $ forge snapshot
 
 ### Anvil
 
+To start the local blockchain server. Open a new terminal and type:
+
 ```shell
 $ anvil
 ```
@@ -48,10 +50,21 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/DeployFundMe.sol --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
+### View Storage structure
+
+```shell
+$ forge inspect <contract-name> storageLayout
+```
+
+This command will provide which state variable occupies which slot in the storage which can help for further research using command `cast storage <contract-addr> <slot-num>`
+
 ### Cast
+
+It is used to convert HEX into Decimals and other conversions. Can also be used to interact with contracts.
+Using `cast send <contract-address> <function-signature> <args(if any)>` and `cast call` commands
 
 ```shell
 $ cast <subcommand>

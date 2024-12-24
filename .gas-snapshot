@@ -1,0 +1,7 @@
+FundmeTest:test_MinimumDollarsFifty() (gas: 8399)
+FundmeTest:test_addsFunderToArray() (gas: 93851)
+FundmeTest:test_checkFundersListForSender() (gas: 96201)
+FundmeTest:test_ownerIsMsgSender() (gas: 12931)
+FundmeTest:test_revertIfAmountLessThenMinimumUSD() (gas: 19493)
+FundmeTest:test_withdrawFailingForDummyUSER() (gas: 96420)
+FundmeTest:test_withdrawWithUsingSingleFunder() (gas: 79769)
